@@ -1,0 +1,38 @@
+{
+  "name": "etherport-client",
+  "version": "0.1.0",
+  "description":"Client-side virtual serial port for Etherport. Used to implement firmata-compatible boards and relays.",
+  "author": {
+    "name": "Marcus Wittig",
+    "url": "https://github.com/mwittig"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "Johnny Five",
+    "Pimatic"
+  ],
+  "homepage": "https://github.com/mwittig/etherport-client/tree/master",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mwittig/etherport-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwittig/etherport-client/issues"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "mwittig",
+      "url": "https://github.com/mwittig"
+    }
+  ],
+  "dependencies": {
+    "es6-shim": "^0.25.3"
+  }
+}

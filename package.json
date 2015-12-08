@@ -33,6 +33,5 @@
     }
   ],
   "dependencies": {
-    "es6-shim": "^0.25.3"
   }
 }

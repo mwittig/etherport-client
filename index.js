@@ -36,13 +36,14 @@ function EtherPortClient(opts) {
     tcp.setNoDelay(true);
     tcp.connect(opts.port, opts.host, function() {
         console.log('XXX Connected');
-        state.flushTo(tcp);
+        self.state.flushTo(tcp);
         tcp.on("data", function(data) {
             console.log('XXX Data', data.length);
-            this.emit("data", data);
-        }.bind(this));
-    }.bind(this));
+            self.emit("data", data);
+        });
+    });
 }
+util.inherits(EtherPortClient, events.EventEmitter);
 
 
 EtherPortClient.prototype.write = function(buffer) {

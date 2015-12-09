@@ -1,7 +1,7 @@
 {
   "name": "etherport-client",
   "version": "0.1.0",
-  "description":"Client-side virtual serial port for Etherport. Used to implement firmata-compatible boards and relays.",
+  "description":"Client-side virtual serial port for Etherport for the implementation of firmata-compatible boards and tethering hubs to control boards by a remote entity.",
   "author": {
     "name": "Marcus Wittig",
     "url": "https://github.com/mwittig"
@@ -14,7 +14,10 @@
   ],
   "keywords": [
     "Johnny Five",
-    "Pimatic"
+    "pimatic",
+    "firmata",
+    "serialport",
+    "etherport"
   ],
   "homepage": "https://github.com/mwittig/etherport-client/tree/master",
   "private": false,
@@ -33,5 +36,6 @@
     }
   ],
   "dependencies": {
+    "debug": "^2.2.0"
   }
 }

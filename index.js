@@ -35,7 +35,7 @@ util.inherits(EtherPortClient, events.EventEmitter);
 EtherPortClient.prototype._connect = function () {
     debug(this.path);
     this._tcp.setNoDelay(true);
-    this._tcp.setTimeout(15000);
+    this._tcp.setTimeout(5000);
     this._tcp.connect(this.port, this.host);
 };
 
@@ -125,7 +125,9 @@ EtherPortClient.prototype._onCloseHandler = function () {
 };
 
 EtherPortClient.prototype.write = function (buffer) {
-
+    if (!Buffer.isBuffer(buffer)) {
+        buffer = new Buffer(buffer);
+    }
     if (this._socket === null) {
         debug('Message queued:', buffer.length, 'byte(s)');
         this._queue.push(buffer);
@@ -202,7 +204,7 @@ function chainSerialPorts(clientPort, serverPort) {
         }
     }
 
-    observer.on('open', function (data) {
+    observer.once('open', function (data) {
         serverPort.on('data', function (data) {
             clientPortWrite(data);
         });

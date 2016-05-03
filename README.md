@@ -53,9 +53,9 @@ USB and you want to access the Arduino board from a remote computer, you chain t
         })
     );
 
-### Using StandardFirmatraWiFi with ESP8266
+### Using StandardFirmataWiFi with ESP8266
  
-By default, StandardFirmatraWiFi with ESP8266 is a TCP Server. Thus, you'll need a TCP client transport for J5.
+By default, StandardFirmataWiFi with ESP8266 is a TCP Server. Thus, you'll need a TCP client transport for J5.
  
     var five = require("johnny-five");
     var EtherPortClient = require("etherport-client").EtherPortClient;

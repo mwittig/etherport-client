@@ -1,6 +1,6 @@
 {
   "name": "etherport-client",
-  "version":  "0.1.0",
+  "version":  "0.1.1",
   "description":"Client-side virtual serial port for Etherport for the implementation of firmata-compatible boards and tethering hubs to control boards by a remote entity.",
   "author": {
     "name": "Marcus Wittig",

@@ -1,5 +1,7 @@
 # etherport-client
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mwittig/etherport-client.svg)](https://greenkeeper.io/)
+
 Client-side virtual serial port for Rick Waldron's [Etherport](https://github.com/rwaldron/etherport). 
 Etherport-client is used to implement firmata-compatible boards and tethering hubs to control a board 
 by a remote entity.

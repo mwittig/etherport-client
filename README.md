@@ -81,7 +81,7 @@ For debugging purposes the [debug package](https://github.com/visionmedia/debug)
  
 ## License
  
-[The MIT License (MIT), Copyright (c) 2015 Marcus Wittig](https://github.com/mwittig/etherport-client/blob/master/LICENSE)
+[The MIT License (MIT), Copyright (c) 2015-2017 Marcus Wittig](https://github.com/mwittig/etherport-client/blob/master/LICENSE)
  
  
  

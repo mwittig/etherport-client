@@ -58,6 +58,7 @@ EtherPortClient.prototype._flushTo = function (socket) {
     if (this._socket === null) {
         this._socket = socket;
         this.emit('open');
+        //this._socket.on("drain");
     }
     if (this._queue.length) {
         this._queue.forEach(function (buffer) {
@@ -124,7 +125,7 @@ EtherPortClient.prototype._onCloseHandler = function () {
     }
 };
 
-EtherPortClient.prototype.write = function (buffer) {
+EtherPortClient.prototype.write = function (buffer, callback) {
     if (!Buffer.isBuffer(buffer)) {
         buffer = new Buffer(buffer);
     }
@@ -135,6 +136,9 @@ EtherPortClient.prototype.write = function (buffer) {
     else {
         debug('Message written:', buffer.length, 'byte(s)');
         this._socket.write(buffer);
+    }
+    if (typeof callback === "function") {
+        process.nextTick(callback)
     }
 };
 

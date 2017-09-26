@@ -37,6 +37,6 @@
     }
   ],
   "dependencies": {
-    "debug": "^2.2.0"
+    "debug": "^3.0.0"
   }
 }

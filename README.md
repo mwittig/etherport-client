@@ -6,6 +6,10 @@ by a remote entity.
  
 ## Usage Examples
 
+The following usage examples can also be found in the `examples` directory of this package/project. 
+ Note, you'll need to manually install the required packages to run the examples 
+ (see `require` statements in the example code).
+
 ### Tethering a Johnny Five IO-Plugin
  
 Create an `EtherPortClient` with `host` and `port` properties referring to the peer transport endpoint of the
@@ -81,7 +85,7 @@ For debugging purposes the [debug package](https://github.com/visionmedia/debug)
  
 ## License
  
-[The MIT License (MIT), Copyright (c) 2015-2017 Marcus Wittig](https://github.com/mwittig/etherport-client/blob/master/LICENSE)
+[The MIT License (MIT), Copyright (c) 2015-2019 Marcus Wittig](https://github.com/mwittig/etherport-client/blob/master/LICENSE)
  
  
  
